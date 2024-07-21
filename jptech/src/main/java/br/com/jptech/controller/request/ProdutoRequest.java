@@ -1,20 +1,22 @@
-package br.com.jptech.domain;
-
+package br.com.jptech.controller.request;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProdutoDomain {
+public class ProdutoRequest {
     private String nome;
     private String marca;
     private BigDecimal preco;
     private Integer quantidadeEstoque;
     private String categoria;
+    private String fornecedor;
 
 }
